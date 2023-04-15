@@ -1,3 +1,15 @@
 Practice Robot framework in demo Qa.com
 
 Url == https://demoqa.com
+
+**** PIP Packages *****
+pip install selenium
+pip install robotframework-seleniumlibrary
+pip install robotframework
+pip install robotframework-selenium2library
+
+**** PLUGINS ****
+https://plugins.jetbrains.com/plugin/17424-intellibot-patched
+https://plugins.jetbrains.com/plugin/16424-robot-runner
+
+

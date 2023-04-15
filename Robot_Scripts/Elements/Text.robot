@@ -8,6 +8,8 @@ Suite Teardown    close browser
 *** Variables ***
 ${browser}  Chrome
 ${chrome_path}    executable_path=C:/web driver/chromedriver.exe
+#${chrome_path}    executable_path=/usr/local/bin/chromedriver
+
 ${url}    https://demoqa.com/text-box
 ${Address}    2/43 Bee Building , North sea road , Russia
 
@@ -39,8 +41,7 @@ click submit
     click element    //button[@id='submit']
 
 scroll
-    execute javascript    window.scrollTo(0,document.body.scrollHeight)
-#    scroll element into view    //button[@id='submit']
+      Execute JavaScript    window.scrollTo(0, 250)
 
 *** Test Cases ***
 Text Box Demo QA
@@ -51,4 +52,5 @@ Text Box Demo QA
     scroll
     slow
     click submit
+    slow
 
